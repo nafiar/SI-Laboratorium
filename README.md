@@ -1,3 +1,18 @@
+# To DO :
+
+Halaman User :
+* Landing Page : Nadia
+* Landing Page Setiap Lab : Nafiar 
+* Form Reservasi : Nafiar
+* Tampilan Calender Tiap Lab : Nafiar
+* Halaman Barang hilang tiap Lab : Nadia
+
+Halaman Admin :
+* Halaman Login : Aviananda
+* Halaman Notifikasi Reservasi : Aviananda
+* Halaman Form Barang Hilang : Aviananda
+* 
+
 # SI-Laboratorium
 
 SI-Laboratorium merupakan Sistem informasi berbasis Web yang yang berisi tentang informasi Lab yang ada di jurusan Teknik Informatika ITS. Informasi yang terdapat pada web ini berupa jadwal reservasi setiap lab dan informasi penemuan barang hilang yang terdapat di lab.
