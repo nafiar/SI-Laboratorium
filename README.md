@@ -11,7 +11,7 @@ Halaman Admin :
 * Halaman Login : Aviananda
 * Halaman Notifikasi Reservasi : Aviananda
 * Halaman Form Barang Hilang : Aviananda
-* 
+* Halaman List Barang Hilang : Nadia
 
 # SI-Laboratorium
 
