@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>@yield('title')</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrappaper.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/papercustom.min.css')}}">
 	<script type="text/javascript" async="" src="{{asset('js/ga.js')}}"></script><script>
      var _gaq = _gaq || [];

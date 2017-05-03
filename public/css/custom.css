@@ -1,1 +1,10 @@
-tbd
+.form-reservasi div {
+	margin: 100, 100;
+}
+
+.footer p {
+    margin: 0;
+    vertical-align: middle;
+    color: #cccccc;
+    font-size: small;
+}
