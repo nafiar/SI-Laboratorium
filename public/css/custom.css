@@ -1,8 +1,9 @@
-.form-reservasi div {
-	margin: 100, 100;
+.form-reservasi {
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
-.footer p {
+.footer-lab p {
     margin: 0;
     vertical-align: middle;
     color: #cccccc;

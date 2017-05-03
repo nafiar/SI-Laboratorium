@@ -4,34 +4,49 @@
 @endsection
 
 @section('content')
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<div class="panel panel-primary form-reservasi">
-				<div class="panel-heading">
-					<h3>Detail Reservasi</h3>
-				</div>
+	<div class="">
+		<div class="col-md-6 col-md-offset-3 form-reservasi">
+			<div class="panel panel-default">
 				<div class="panel-body">
-					<form class="form-horizontal">
-						<fieldset>
-							<div class="form-group">
-								<label class="control-label" for="focusedInput">Nama Kegiatan</label>
- 								<input class="form-control" id="focusedInput" type="text" value="contoh. Kelas PAA B 2016">
-							</div>
-							<div class="form-group">
-								<label class="control-label" for="focusedInput">Kategori</label>
- 								<select class="form-control" id="select">
-									<option>Kuliah</option>
-									<option>Workshop</option>
-									<option>Keperluan Lab</option>
-									<option>Praktikum</option>
-									<option>Acara Himpunan</option> 									
- 								</select>
-							</div>
-							<div class="form-group">
-								<label class="control-label" for="focusedInput">Nama Kegiatan</label>
- 								<input class="form-control" id="focusedInput" type="text" value="This is focused...">
-							</div>
-						</fieldset>					
+					<h3><strong>Detail Reservasi</strong></h3>
+					<form>	
+						<div class="form-group">
+							<label class="control-label" for="focusedInput">Nama Kegiatan</label>
+								<input class="form-control" id="focusedInput" type="text" placeholder="contoh. Kelas PAA B 2016">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="focusedInput">Kategori</label>
+								<select class="form-control" id="select">
+								<option>Kuliah</option>
+								<option>Workshop</option>
+								<option>Keperluan Lab</option>
+								<option>Praktikum</option>
+								<option>Acara Himpunan</option> 									
+								</select>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="focusedInput">Deskripsi</label>
+								<input class="form-control" id="focusedInput" type="text" placeholder="This is focused...">
+						</div>
+						<br>
+						<h4><strong>Contact Person</strong></h4>
+						<div class="form-group">
+							<input class="form-control" id="focusedInput" type="text" name="nrp" placeholder="NRP">
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="focusedInput" type="text" name="nama" placeholder="NAMA">
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="focusedInput" type="text" name="email" placeholder="EMAIL">
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="focusedInput" type="text" name="no_hp" placeholder="NO HP">
+						</div>
+						<br>
+						<div class="form-group">
+							<button class="btn btn-danger pull-left">CANCEL</button>
+							<button class="btn btn-primary pull-right">SUBMIT</button>
+						</div>
 					</form>
 				</div>
 			</div>		
