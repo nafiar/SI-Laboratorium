@@ -6,6 +6,7 @@ Form Reservasi
 
 @section('moreStyle')
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="{{asset('bower_components/sweetalert/dist/sweetalert.css')}}">
 @endsection
 
 @section('content')
@@ -68,8 +69,8 @@ Form Reservasi
 					</div>
 					<br>
 					<div class="form-group">
-						<button class="btn btn-danger pull-left">CANCEL</button>
-						<button class="btn btn-primary pull-right">SUBMIT</button>
+						<button id="cancel" class="btn btn-danger pull-left">CANCEL</button>
+						<button id="submit" class="btn btn-primary pull-right">SUBMIT</button>
 					</div>
 				</form>
 			</div>
@@ -80,8 +81,12 @@ Form Reservasi
 @section('moreScript')
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.js"></script>
 <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
+<script type="text/javascript" src="{{asset('bower_components/sweetalert/dist/sweetalert.min.js')}}"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
 <script type="text/javascript">
+	$(document).on('click', '#submit', function(){
+		swal("Permintaan Reservasi Berhasil Di Simpan")
+	});
 	$('#datepicker').onClick(function(){
 		console.log("bisa kok");
 	});
