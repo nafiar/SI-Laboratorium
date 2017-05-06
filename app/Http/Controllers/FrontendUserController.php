@@ -13,4 +13,12 @@ class FrontendUserController extends Controller
     public function formReservasi(){
     	return view('form-reservasi');
     }
+
+    public function kalender(){
+    	return view('kalender');
+    }
+
+    public function homeLab(){
+    	return view('home-lab');
+    }
 }

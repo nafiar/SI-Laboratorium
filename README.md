@@ -2,9 +2,9 @@
 
 Halaman User :
 * Landing Page : Nadia
-* Landing Page Setiap Lab : Nafiar 
-* Form Reservasi : Nafiar
-* Tampilan Calender Tiap Lab : Nafiar
+* Landing Page Setiap Lab : Nafiar -> kurang modal di setiap schedule
+* Form Reservasi : Nafiar -> kurang date picker, timepicker, swal submit sama cancel
+* Tampilan Calender Tiap Lab : Nafiar -> kurang modal tiap jadwal
 * Halaman Barang hilang tiap Lab : Nadia
 
 Halaman Admin :
