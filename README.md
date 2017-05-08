@@ -8,10 +8,10 @@ Halaman User :
 * Halaman Barang hilang tiap Lab : Nadia
 
 Halaman Admin :
-* Halaman Login : Aviananda
-* Halaman Notifikasi Reservasi : Aviananda
-* Halaman Form Barang Hilang : Aviananda
-* Halaman List Barang Hilang : Nadia
+* Halaman Login : Aviananda -> Selesai
+* Halaman Notifikasi Reservasi : Aviananda -> kurang javascript
+* Halaman Form Barang Hilang : Aviananda -> kurang modal
+* Halaman List Barang Hilang : Nadia 
 
 # SI-Laboratorium
 
