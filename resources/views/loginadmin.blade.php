@@ -57,7 +57,7 @@
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a  style="margin-bottom:3%" href="index.html" class="btn btn-lg btn-primary btn-block">Login</a>
+                                <a  style="margin-bottom:3%" href="{{url('/index')}}" class="btn btn-lg btn-primary btn-block">Login</a>
                                 <center><h7> Don't have account? <a href="register.html">Register</a></h7></center>
                             </fieldset>
                         </form>

@@ -15,6 +15,7 @@ Route::get('/reservasi' , 'FrontendUserController@formReservasi');
 Route::get('/kalender', 'FrontendUserController@kalender');
 Route::get('/homelab', 'FrontendUserController@homelab');
 Route::get('/login', 'FrontendAdminController@login');
+Route::get('/index', 'FrontendAdminController@index');
 
 Route::get('/', function () {
     return view('welcome');
