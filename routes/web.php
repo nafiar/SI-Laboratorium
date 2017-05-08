@@ -10,11 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/hilang' , 'FrontendUserController@hilang');
 Route::get('/home' , 'FrontendUserController@index');
 Route::get('/reservasi' , 'FrontendUserController@formReservasi');
+Route::get('/infolab' , 'FrontendUserController@infolab');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/coba', function () {
