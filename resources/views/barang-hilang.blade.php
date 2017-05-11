@@ -186,12 +186,19 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><center><img src="{{asset('SI-ADMIN/img/chargerhp.jpg')}}" style="width:70%"></center></td>
+                                            <td><div class="col-lg-8"> <center><img src="{{asset('SI-ADMIN/img/chargerhp.jpg')}}" style="width:100%"></center></div></td>
                                             <td>Charger HP</td>
                                             <td>10-05-2017</td>
                                             <td>Charger HP merk lenovo warna hitam</td>
                                             <td><center><button type="submit" class="btn btn-primary">Claim</button></center></td>
-
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><div class="col-lg-8"><center><img src="{{asset('SI-ADMIN/img/chargerlaptop.jpg')}}" style="width:100%"></center></div></td>
+                                            <td>Charger Laptop</td>
+                                            <td>15-05-2017</td>
+                                            <td>Charger Laptop merk ASUS warna hitam</td>
+                                            <td><center><button type="submit" class="btn btn-primary disabled">Claimed</button></center></td>
                                         </tr>
                                         
                                         
