@@ -69,7 +69,7 @@
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{{url('/login')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -165,6 +165,7 @@
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -177,10 +178,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -188,10 +190,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>Acara Himpunan</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -221,6 +224,7 @@
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -233,10 +237,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -244,10 +249,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -272,10 +278,11 @@
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                         <tr>
+                                        <tr>
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -288,10 +295,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -299,10 +307,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -327,10 +336,11 @@
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                         <tr>
+                                        <tr>
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -343,10 +353,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -354,10 +365,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -381,10 +393,11 @@
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                         <tr>
+                                        <tr>
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -397,10 +410,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -408,10 +422,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -436,10 +451,11 @@
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                         <tr>
+                                        <tr>
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -452,10 +468,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -463,10 +480,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -491,10 +509,11 @@
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                         <tr>
+                                        <tr>
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -507,10 +526,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -518,10 +538,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -550,6 +571,7 @@
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -562,10 +584,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -573,10 +596,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
@@ -601,10 +625,11 @@
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                         <tr>
+                                        <tr>
                                             <th>No.</th>
                                             <th>NRP</th>
                                             <th>Nama</th>
+                                            <th>Nama Barang</th>
                                             <th>No. HP</th>
                                             <th>Tanggal Pinjam</th>
                                             <th>Tanggal Kembalikan</th>
@@ -617,10 +642,11 @@
                                             <td>1</td>
                                             <td>5114100085</td>
                                             <td>Aviananda</td>
+                                            <td>PC</td>
                                             <td>081212801054</td>
                                             <td>10-05-2017</td>
-                                            <td>15.00 - 17.00</td>
-                                            <td>Praktikum Jarkom Modul 4</td>
+                                            <td>10-07-2017</td>
+                                            <td>Keperluan TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
@@ -628,10 +654,11 @@
                                             <td>2</td>
                                             <td>5114100130</td>
                                             <td>Nadia</td>
+                                            <td>PC</td>
                                             <td>081212801053</td>
                                             <td>10-05-2017</td>
-                                            <td>17.00 - 18.00</td>
-                                            <td>WP Panitia Danus</td>
+                                            <td>10-06-2017</td>
+                                            <td>TA</td>
                                             <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
