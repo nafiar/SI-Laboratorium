@@ -10,10 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/papercustom.min.css')}}">
 	<script type="text/javascript" src="{{asset('js/bootstrappaper.min.js')}}"></script>
 	<script type="text/javascript" async="" src="{{asset('js/ga.js')}}"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- Custom layout -->
 	<link rel="stylesheet" href="{{asset('css/custom.css')}}">
 </head>
@@ -22,7 +18,7 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="" class="navbar-brand">i-Laboratory</a>
+					<a href="{{url('/home')}}" class="navbar-brand">i-Laboratory</a>
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
