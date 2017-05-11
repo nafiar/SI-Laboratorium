@@ -19,6 +19,7 @@ Route::get('/login', 'FrontendAdminController@login');
 Route::get('/index', 'FrontendAdminController@index');
 Route::get('/infolab' , 'FrontendUserController@infolab');
 Route::get('/barang-hilang' , 'FrontendAdminController@barangHilang');
+Route::get('/pinjam-barang' , 'FrontendAdminController@pinjamBarang');
 
 Route::get('/', function () {
     return view('home');

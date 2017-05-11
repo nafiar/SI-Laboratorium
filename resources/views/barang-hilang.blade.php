@@ -95,10 +95,9 @@
                         <li>
                             <a href="{{url('/index')}}"><i class="fa fa-table fa-fw"></i> Reservasi Lab</a>
                         </li>
-                       
-                       <!--  <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Reservasi</a>
-                        </li> -->
+                       <li>
+                            <a href="{{url('/pinjam-barang')}}"><i class="fa fa-table fa-fw"></i> Peminjaman Barang</a>
+                        </li>
                         <li>
                             <a href="{{url('/barang-hilang')}}"><i class="fa fa-edit fa-fw"></i> Barang Hilang</a>
                         </li>
@@ -120,14 +119,33 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Form </h4>
+                                            <h4 class="modal-title" id="myModalLabel"><b>Form Penemuan Barang Hilang</b> </h4>
                                         </div>
-                                        <div class="modal-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
+                                        
+                                            <div style="margin-top:2%" class="col-lg-12">
+                                                <form role="form">
+                                                    <div class="form-group">
+                                                        <label>Nama Barang</label>
+                                                        <input class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Tanggal Ditemukan</label>
+                                                        <input class="form-control" placeholder="mm/dd/yyyy">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Upload Foto Barang</label>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Keterangan</label>
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                    
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
                                     <!-- /.modal-content -->
@@ -168,7 +186,7 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><center><img src="../img/chargerhp.jpg" style="width:70%"></center></td>
+                                            <td><center><img src="{{asset('SI-ADMIN/img/chargerhp.jpg')}}" style="width:70%"></center></td>
                                             <td>Charger HP</td>
                                             <td>10-05-2017</td>
                                             <td>Charger HP merk lenovo warna hitam</td>
