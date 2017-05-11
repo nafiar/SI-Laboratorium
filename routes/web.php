@@ -18,6 +18,7 @@ Route::get('/homelab', 'FrontendUserController@homelab');
 Route::get('/login', 'FrontendAdminController@login');
 Route::get('/index', 'FrontendAdminController@index');
 Route::get('/infolab' , 'FrontendUserController@infolab');
+Route::get('/fasilitas' , 'FrontendUserController@fasilitas');
 
 Route::get('/', function () {
     return view('home');

@@ -12,6 +12,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{url('/kalender')}}" ><i class="glyphicon glyphicon-calendar"></i> Kalender Lab</a></li>
         <li><a href="{{url('/homelab')}}" ><i class="glyphicon glyphicon-home"></i> Lab Pemrograman</a></li>
+        <li><a href="{{url('/fasilitas')}}" ><i class="glyphicon glyphicon-th-list"></i>Fasilitas</a></li>
         <li><a href="{{url('/hilang')}}"><i class="glyphicon glyphicon-briefcase"></i> Barang Hilang</a></li>
       </ul>
     </div>
