@@ -17,4 +17,8 @@ class FrontendAdminController extends Controller
     public function barangHilang(){
     	return view('barang-hilang');
     }
+
+    public function pinjamBarang(){
+    	return view('pinjam-barang');
+    }
 }
