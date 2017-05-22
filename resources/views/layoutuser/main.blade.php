@@ -22,8 +22,8 @@
 	</div>
 	@include('layoutuser.footer')
 </div>
-<script type="text/javascript" src="{{asset('js/custompaper.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/jquery-2.2.3.min.js')}}"></script>
+<!-- <script type="text/javascript" src="{{asset('js/custompaper.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/jquery-2.2.3.min.js')}}"></script> -->
 @yield('moreScript')
 </body>
 </html>

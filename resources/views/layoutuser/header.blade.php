@@ -10,10 +10,10 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{url('/kalender')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-calendar"></i> Kalender Lab</a></li>
         <li><a href="{{url('/homelab')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-home"></i> Lab Pemrograman</a></li>
-        <li><a href="{{url('/fasilitas')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-th-list"></i>Fasilitas</a></li>
+        <li><a href="{{url('/fasilitas')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-th-list"></i> Fasilitas</a></li>
         <li><a href="{{url('/hilang')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-briefcase"></i> Barang Hilang</a></li>
+        <li><a href="{{url('/kalender')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-calendar"></i> Kalender Lab</a></li>
       </ul>
     </div>
   </div>
