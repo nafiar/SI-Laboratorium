@@ -29,4 +29,8 @@ class FrontendUserController extends Controller
     public function infolab(){
     	return view('infolab');
     }
+
+    public function fasilitas(){
+        return view('fasilitas');
+    }
 }

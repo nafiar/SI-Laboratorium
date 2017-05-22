@@ -18,7 +18,7 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="" class="navbar-brand">i-Laboratory</a>
+					<a href="{{url('/home')}}" class="navbar-brand">i-Laboratory</a>
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -33,7 +33,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/mi.png" >
+								<a href="{{url('/homelab')}}" >
 									<img src="/img/mi.png" alt="Lights" style="width:100%">
 									<div class="caption">
 										<h4>Manajemen Informasi (MI)</h4>
@@ -44,7 +44,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/alpro.png">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/alpro.png" alt="Nature" style="width:95%">
 									<div class="caption">
 										<h4>Algoritma dan Pemrograman (ALPRO)</h4>
@@ -54,7 +54,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/LP2.png">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/LP2.png" alt="Fjords" style="width:85%">
 									<div class="caption">
 										<h4>Laboratorium Pemrograman 2 (LP 2)</h4>
@@ -66,7 +66,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/mis.png">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/mis.png" alt="Lights" style="width:93%">
 									<div class="caption">
 										<h4>Mobile Innovation Studio (MIS)</h4>
@@ -76,7 +76,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/igs.png">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/igs.png" alt="Nature" style="width:93%">
 									<div class="caption">
 										<h4>Interaksi Grafika dan Seni (IGS)</h4>
@@ -86,7 +86,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/ajk.png">
+								<a href="{{url('/homelab')}}">
 									<img src="img/ajk.png" alt="Fjords" style="width:120%">
 									<div class="caption">
 										<h4>Arsitektur dan Jaringan Komputer (AJK)</h4>
@@ -98,7 +98,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/LP.png" alt="Lights" style="width:80%">
 									<div class="caption">
 										<h4>Laboratorium Pemrograman (LP)</h4>
@@ -108,7 +108,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/img/KCV.png">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/KCV.png" alt="Nature" style="width:100%">
 									<div class="caption">
 										<h4>Komputasi Cerdas dan Visi (KCV)</h4>
@@ -118,7 +118,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<a href="/infolab">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/ncc.png" alt="Fjords" style="width:85%">
 									<div class="caption">
 										<h4>Komputasi Berbasis Jaringan (NCC)</h4>
@@ -130,7 +130,7 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="thumbnail">
-								<a href="/img/rpl.png">
+								<a href="{{url('/homelab')}}">
 									<img src="/img/rpl.png" alt="Nature" style="width:100%">
 									<div class="caption">
 										<h4>Rekayasa Perangkat Lunak (RPL)
