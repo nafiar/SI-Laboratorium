@@ -58,7 +58,7 @@
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <a  style="margin-bottom:3%" href="{{url('/index')}}" class="btn btn-lg btn-primary btn-block">Login</a>
-                                <center><h7> Don't have account? <a href="{{url('/register')}}">Register</a></h7></center>
+                                <center><h7> Don't have account? <a href="register.html">Register</a></h7></center>
                             </fieldset>
                         </form>
                     </div>
