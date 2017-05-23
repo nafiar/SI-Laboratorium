@@ -45,20 +45,43 @@
             <div class="col-md-4 col-md-offset-4">
                 <div style="margin-top:0" class="login-panel panel panel-default">
                     <div  class="panel-heading">
-                        <center><h3 class="panel-title">Login</h3></center>
+                        <center><h3 class="panel-title">Register</h3></center>
                     </div>
                     <div class="panel-body">
                         <form role="form">
-                            <fieldset>
+                           <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Nama" name="nama" type="nama" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="NRP" name="NRP" type="NRP" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Pilih Laboratorium</option>
+                                        <option value="tabel-rpl">RPL</option>
+                                        <option value="tabel-ncc">NCC</option>
+                                        <option value="tabel-kcv">KCV</option>
+                                        <option value="tabel-lp1">LP</option>
+                                        <option value="tabel-ajk">AJK</option>
+                                        <option value="tabel-igs">IGS</option>
+                                        <option value="tabel-lp2">LP-2</option>
+                                        <option value="tabel-alpro">ALPRO</option>
+                                        <option value="tabel-mi">MI</option>
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="No. HP" name="nama" type="nama" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a  style="margin-bottom:3%" href="{{url('/index')}}" class="btn btn-lg btn-primary btn-block">Login</a>
-                                <center><h7> Don't have account? <a href="{{url('/register')}}">Register</a></h7></center>
+                                <a  style="margin-bottom:3%" href="{{url('/login')}}" class="btn btn-lg btn-primary btn-block">Register</a>
+                                <center><h7>Have an account? <a href="{{url('/login ')}}">Login</a></h7></center>
                             </fieldset>
                         </form>
                     </div>

@@ -20,6 +20,9 @@ Route::get('/login', 'FrontendAdminController@login');
 Route::get('/index', 'FrontendAdminController@index');
 Route::get('/infolab' , 'FrontendUserController@infolab');
 Route::get('/fasilitas' , 'FrontendUserController@fasilitas');
+Route::get('/barang-hilang' , 'FrontendAdminController@barangHilang'); 
+Route::get('/pinjam-barang' , 'FrontendAdminController@pinjamBarang'); 
+Route::get('/register' , 'FrontendAdminController@register'); 
 
 Route::get('/coba', function () {
     return view('coba');
