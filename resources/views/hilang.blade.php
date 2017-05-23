@@ -10,19 +10,19 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/papercustom.min.css')}}">
 	<script type="text/javascript" src="{{asset('js/bootstrappaper.min.js')}}"></script>
 	<script type="text/javascript" async="" src="{{asset('js/ga.js')}}"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<!-- Custom layout -->
 	<link rel="stylesheet" href="{{asset('css/custom.css')}}">
+	  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 	<div>
-		<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #2196f3; border : none">
 			<div class="container">
-				<div class="navbar-header">
-					<a href="" class="navbar-brand">i-Laboratory</a>
+				<div class="navbar-header" >
+					<a href="{{url('/home')}}" class="navbar-brand" style ="color: #b2dbfb">i-Laboratory</a>
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -30,10 +30,12 @@
 					</button>
 				</div>
 				<div class="navbar-collapse collapse" id="navbar-main">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="" target="_blank"><i class="glyphicon glyphicon-calendar"></i> Kalender Lab</a></li>
-						<li><a href="{{url('/hilang')}}" target="_blank"><i class="glyphicon glyphicon-briefcase"></i> Barang Hilang</a></li>
-					</ul>
+			      <ul class="nav navbar-nav navbar-right" >
+			        <li><a href="{{url('/homelab')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-home"></i> Lab Pemrograman</a></li>
+			        <li><a href="{{url('/fasilitas')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-th-list"></i> Fasilitas</a></li>
+			        <li><a href="{{url('/hilang')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-briefcase"></i> Barang Hilang</a></li>
+			        <li><a href="{{url('/kalender')}}" style ="color: #b2dbfb"><i class="glyphicon glyphicon-calendar"></i> Kalender Lab</a></li>
+			      </ul>
 
 				</div>
 			</div>
@@ -53,7 +55,7 @@
 										<h2 class="text-center">Headset</h2><br>
 										<h5>Tanggal Ditemukan : 7 Mei 2017</h5>
 									</div>
-									<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal1">Detail</button>
+									<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal1">Detail</button>
 
 									<!-- Modal -->
 									<div class="modal fade" id="modal1" role="dialog">
@@ -93,7 +95,7 @@
 											<h2 class="text-center">Headset</h2><br>
 											<h5>Tanggal Ditemukan : 6 Mei 2017</h5>
 										</div>
-										<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal2">Detail</button>
+										<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal2">Detail</button>
 
 										<!-- Modal -->
 										<div class="modal fade" id="modal2" role="dialog">
@@ -133,7 +135,7 @@
 												<h2 class="text-center">Gelang</h2><br>
 												<h5>Tanggal Ditemukan : 6 Mei 2017</h5>
 											</div>
-											<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal3">Detail</button>
+											<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal3">Detail</button>
 
 											<!-- Modal -->
 											<div class="modal fade" id="modal3" role="dialog">
@@ -176,7 +178,7 @@
 												<h2 class="text-center">Kacamata</h2><br>
 												<h5>Tanggal Ditemukan : 5 Mei 2017</h5>
 											</div>
-											<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal4">Detail</button>
+											<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal4">Detail</button>
 
 											<!-- Modal -->
 											<div class="modal fade" id="modal4" role="dialog">
@@ -216,7 +218,7 @@
 													<h2 class="text-center">Tempat Pensil</h2><br>
 													<h5>Tanggal Ditemukan : 4 Mei 2017</h5>
 												</div>
-												<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal5">Detail</button>
+												<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal5">Detail</button>
 
 												<!-- Modal -->
 												<div class="modal fade" id="modal5" role="dialog">
@@ -256,7 +258,7 @@
 														<h2 class="text-center">Kunci Motor</h2><br>
 														<h5>Tanggal Ditemukan : 4 Mei 2017</h5>
 													</div>
-													<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal6">Detail</button>
+													<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal6">Detail</button>
 
 													<!-- Modal -->
 													<div class="modal fade" id="modal6" role="dialog">

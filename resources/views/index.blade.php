@@ -55,7 +55,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a style="color: white" class="navbar-brand" href="index.html">i - Laboratory</a>
+                <a style="color: white" class="navbar-brand" href="{{url('/index')}}">i - Laboratory</a>
             </div>
             <!-- /.navbar-header -->
 
