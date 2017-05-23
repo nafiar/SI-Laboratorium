@@ -5,6 +5,8 @@ Kalender Laboratorium Pemrograman
 @endsection
 
 @section('moreStyle')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 @endsection
 
 @section('content')
@@ -78,7 +80,7 @@ Kalender Laboratorium Pemrograman
 					</div>
 					<div class="konten-jadwal">
 						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>19:30 - 21:00</p></button>
 					</div>
 				</div>
 				<div class="panel tanggal-kalender">
@@ -120,7 +122,7 @@ Kalender Laboratorium Pemrograman
 					</div>
 					<div class="konten-jadwal">
 						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>19:30 - 21:00</p></button>
 					</div>
 				</div>
 				<div class="panel tanggal-kalender">
@@ -170,8 +172,8 @@ Kalender Laboratorium Pemrograman
 						<p><strong>15</strong></p>	
 					</div>
 					<div class="konten-jadwal">
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>16:30 - 18:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>19:30 - 21:00</p></button>
 					</div>
 				</div>
 				<div class="panel tanggal-kalender">
@@ -238,7 +240,7 @@ Kalender Laboratorium Pemrograman
 					</div>
 					<div class="konten-jadwal">
 						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>16:30 - 18:00</p></button>
 					</div>
 				</div>
 				<div class="panel tanggal-kalender">
@@ -255,7 +257,7 @@ Kalender Laboratorium Pemrograman
 					</div>
 					<div class="konten-jadwal">
 						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>16:00 - 18:00</p></button>
 					</div>
 				</div>
 				<div class="panel tanggal-kalender">
@@ -296,7 +298,7 @@ Kalender Laboratorium Pemrograman
 					</div>
 					<div class="konten-jadwal">
 						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
-						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>12:30 - 15:00</p></button>
+						<button class="btn btn-default btn-xs btn-block jadwal" data-toggle="modal" data-target="#myModal"><p>16:00 - 18:00</p></button>
 					</div>
 				</div>
 				<div class="panel tanggal-kalender">
@@ -341,7 +343,8 @@ Kalender Laboratorium Pemrograman
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title">Kelas PAA B | 12:30 - 15:00</h2>
+					<h3 class="modal-title">Kelas PAA B | 12:30 - 15:00</h3>
+					<hr>
 				</div>
 				<div class="modal-body">
 					<p>Kategori : Kuliah</p>
@@ -349,7 +352,8 @@ Kalender Laboratorium Pemrograman
 					<p>Dipinjam oleh : Nafiar R</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+					<hr>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
