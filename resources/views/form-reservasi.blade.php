@@ -5,8 +5,20 @@ Form Reservasi
 @endsection
 
 @section('moreStyle')
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css">
-<link rel="stylesheet" type="text/css" href="{{asset('bower_components/sweetalert/dist/sweetalert.css')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- 	 -->
+<!-- <link rel="stylesheet" href="https://rawgit.com/FezVrasta/bootstrap-material-design/master/dist/css/material.min.css" /> -->
+<link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert.css')}}">
+<link rel="stylesheet" href="{{asset('css/bootstrap-material-datetimepicker.css')}}" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://rawgit.com/FezVrasta/bootstrap-material-design/master/dist/js/material.min.js"></script>
+<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="{{asset('js/bootstrap-material-datetimepicker.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/sweetalert.min.js')}}"></script>
 @endsection
 
 @section('content')
@@ -19,19 +31,19 @@ Form Reservasi
 					<div class="form-group row">
 						<div class="col-md-6 waktu-jadwal">
 							<label class="control-label" for="focusedInput">Pilih Tanggal</label>
-							<input class="form-control waktu-jadwal" id="focusedInput datepicker" type="text" placeholder="">	
+							<input class="form-control waktu-jadwal" id="date" type="text" placeholder="">	
 						</div>
 						<div class="col-md-6 waktu-jadwal">
 							<label class="control-label" for="focusedInput">Pilih Waktu Mulai</label>
-							<input class="form-control waktu-jadwal" id="focusedInput timepicker" type="text" placeholder="">
+							<input class="form-control waktu-jadwal" id="time" type="text" placeholder="">
 						</div>
 					</div>
-					<div class="form-group row">
-						<div class="col-md-3">
-							<input class="form-control" type="text" td="focusedInput">
+					<div class="form-group row col-md-offset-2">
+						<div class="col-md-5 ">
+							<label class="control-label label-durasi" for="focusedInput">Durasi Jadwal (Menit)</label>
 						</div>
-						<div class="col-md-3 ">
-							<label class="control-label label-durasi" for="focusedInput">Durasi Jadwal</label>
+						<div class="col-md-3">
+							<input class="form-control waktu-jadwal" type="text" td="focusedInput">
 						</div>
 					</div>
 					<hr>
@@ -59,18 +71,20 @@ Form Reservasi
 						<input class="form-control" id="focusedInput" type="text" name="nrp" placeholder="NRP">
 					</div>
 					<div class="form-group">
-						<input class="form-control" id="focusedInput" type="text" name="nama" placeholder="NAMA">
+						<input class="form-control" id="focusedInput" type="text" name="nama" placeholder="Nama">
 					</div>
 					<div class="form-group">
-						<input1 class="form-control" id="focusedInput" type="text" name="email" placeholder="EMAIL">
+						<input class="form-control" id="focusedInput" type="text" name="email" placeholder="Email">
 					</div>
 					<div class="form-group">
-						<input class="form-control" id="focusedInput" type="text" name="no_hp" placeholder="NO HP">
+						<input class="form-control" id="focusedInput" type="text" name="no_hp" placeholder="No HP">
 					</div>
 					<br>
 					<div class="form-group">
-						<button id="cancel" class="btn btn-danger pull-left">CANCEL</button>
-						<button id="submit" class="btn btn-primary pull-right">SUBMIT</button>
+						<a class="btn btn-danger pull-left" href="/homelab">CANCEL</a>
+						<div class="btn btn-primary pull-right" id="cobadeh">
+							SUBMIT
+						</div>
 					</div>
 				</form>
 			</div>
@@ -79,23 +93,27 @@ Form Reservasi
 @endsection
 
 @section('moreScript')
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.js"></script>
-<script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
-<script type="text/javascript" src="{{asset('bower_components/sweetalert/dist/sweetalert.min.js')}}"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
 <script type="text/javascript">
-	$(document).on('click', '#submit', function(){
-		swal("Permintaan Reservasi Berhasil Di Simpan")
-	});
-	$('#datepicker').onClick(function(){
-		console.log("bisa kok");
-	});
-	$('#timepicker').datepicker({
-		datepicker:false,
-		format:'H:i'
-	});
-	$('#datepicker').datepicker({
+	$(document).ready(function()
+		{
+			$('#date').bootstrapMaterialDatePicker
+			({
+				time: false,
+				clearButton: true
+			});
 
+			$('#time').bootstrapMaterialDatePicker
+			({
+				date: false,
+				shortTime: false,
+				format: 'HH:mm'
+			});
+
+			$.material.init()
+		});
+	$('#cobadeh').on('click', function(){
+		swal("Good job!", "You clicked the button!", "success");
+		localtion.reload();
 	});
 </script>
 @endsection

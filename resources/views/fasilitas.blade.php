@@ -1,11 +1,11 @@
 @extends('layoutuser.main')
 
 @section('title')
-Form Reservasi
+Fasilitas Lab
 @endsection
 
 @section('moreStyle')
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -27,7 +27,7 @@ Form Reservasi
 								<h2 class="text-center">Personal Computer</h2><br>
 								<h5>Jumlah : 10 buah</h5>
 								<h5>Keterangan : Processor intel i3, VGA CARD 2Gb 64Bit, Hardisk Seagate 500Gb, LCD	Viewsonic 20 Inch, Keyboard LOGITECH, Wireless Mouse</h5>
-								<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal1">Pinjam</button>
+								<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal1">Pinjam</button>
 							</div>
 							<!-- Modal -->
 							<div class="modal fade" id="modal1" role="dialog">
@@ -96,7 +96,7 @@ Form Reservasi
 								<h2 class="text-center">LCD</h2><br>
 								<h5>Jumlah : 3 buah</h5>
 								<h5>Keterangan : resolusi 1280×1024, viewable size 15 inch, merk samsung</h5>
-								<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal2">Pinjam</button>
+								<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal2">Pinjam</button>
 							</div>
 							<!-- Modal -->
 							<div class="modal fade" id="modal2" role="dialog">
@@ -165,7 +165,7 @@ Form Reservasi
 								<h2 class="text-center">EEG</h2><br>
 								<h5>Jumlah : 3 buah</h5>
 								<h5>Keterangan : untuk merekam aktivitas elektrik dari otak, yang direpresentasikan dalam bentuk garis gelombang.</h5>
-								<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal3">Pinjam</button>
+								<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal3">Pinjam</button>
 							</div>
 							<!-- Modal -->
 							<div class="modal fade" id="modal3" role="dialog">
@@ -236,7 +236,7 @@ Form Reservasi
 								<h2 class="text-center">Virtual Reality</h2><br>
 								<h5>Jumlah : 2 buah</h5>
 								<h5>Keterangan : Processor intel i3, VGA CARD 2Gb 64Bit, Hardisk Seagate 500Gb, LCD	Viewsonic 20 Inch, Keyboard LOGITECH, Wireless Mouse</h5>
-								<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal4">Pinjam</button>
+								<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal4">Pinjam</button>
 							</div>
 							<!-- Modal -->
 							<div class="modal fade" id="modal4" role="dialog">
@@ -305,7 +305,7 @@ Form Reservasi
 								<h2 class="text-center">Kinect</h2><br>
 								<h5>Jumlah : 3 buah</h5>
 								<h5>Keterangan : area penggunaan 1.2-35 m (3.9-11 kaki), lebar pandangan angular 57 derajat horizontal dan 43 derajat vertikal,  kedalaman suara 16-bit pada kecepatan cuplik 16 kHz</h5>
-								<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal5">Pinjam</button>
+								<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal5">Pinjam</button>
 							</div>
 							<!-- Modal -->
 							<div class="modal fade" id="modal5" role="dialog">
@@ -374,7 +374,7 @@ Form Reservasi
 								<h2 class="text-center">Proyektor</h2><br>
 								<h5>Jumlah : 2 buah</h5>
 								<h5>Keterangan : untuk merekam aktivitas elektrik dari otak, yang direpresentasikan dalam bentuk garis gelombang.</h5>
-								<button type="button" class="btn btn-info btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal3">Pinjam</button>
+								<button type="button" class="btn btn-primary btn-lg btn-group btn-group-justified" data-toggle="modal" data-target="#modal3">Pinjam</button>
 							</div>
 							<!-- Modal -->
 							<div class="modal fade" id="modal3" role="dialog">
