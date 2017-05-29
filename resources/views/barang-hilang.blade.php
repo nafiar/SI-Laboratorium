@@ -30,6 +30,9 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     
+    <link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert.css')}}">
+    <script type="text/javascript" src="{{asset('js/sweetalert.min.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -249,6 +252,9 @@
                 }
             });
         }).change();
+    });
+    $('#claim').on('click', function(){
+        document.getElementById("claim").className = "disabled";
     });
     </script>
 

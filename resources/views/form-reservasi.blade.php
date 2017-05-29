@@ -113,7 +113,7 @@ Form Reservasi
 		});
 	$('#cobadeh').on('click', function(){
 		swal("Good job!", "You clicked the button!", "success");
-		localtion.reload();
+		//localtion.reload();
 	});
 </script>
 @endsection
