@@ -453,6 +453,11 @@ Fasilitas Lab
 	$('#datepicker').datepicker({
 
 	});
+	swal(
+	  'Fasilitas Telah Dipinjam',
+	  'Silahkan Hubungi Admin',
+	  'success'
+	)
 </script>
 @endsection
 
