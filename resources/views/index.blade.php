@@ -13,7 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('SI-ADMIN/vendor/bootstrap/css/bootstrap.min.css')}}"  rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert.css')}}">
     <!-- MetisMenu CSS -->
     <link href="{{asset('SI-ADMIN/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
 
@@ -26,9 +26,13 @@
     <!-- Custom Fonts -->
     <link href="{{asset('SI-ADMIN/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert.css')}}">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,7 +41,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script type="text/javascript" src="{{asset('js/sweetalert.min.js')}}"></script>
 </head>
 
 <body style="font-family: Open Sans">
@@ -121,32 +125,19 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <!-- <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="form-group">
-                    
-                        <select class="form-control">
-                            <option>Pilih Laboratorium</option>
-                            <option value="tabel-rpl">RPL</option>
-                            <option value="tabel-ncc">NCC</option>
-                            <option value="tabel-kcv">KCV</option>
-                            <option value="tabel-lp1">LP</option>
-                            <option value="tabel-ajk">AJK</option>
-                            <option value="tabel-igs">IGS</option>
-                            <option value="tabel-lp2">LP-2</option>
-                            <option value="tabel-alpro">ALPRO</option>
-                            <option value="tabel-mi">MI</option>
-                        </select>
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Cetak Laporan Peminjaman Bulan ini
+                        </div>
+                        <div class="panel-body">
+                            Untuk mendapatkan laporan peminjaman lab pada bulan ini silahkan klik tombol di bawah
+                            <div class="center" style="text-align: center; margin-top: 10px;">
+                                <a class="btn btn-primary" href="/cetaklaporan">Download Laporan</a>
+                            </div> 
+                        </div>
                     </div>
-                    <div class="tabel-rpl box">1</div>
-                    <div class="tabel-ncc box">2</div>
-                    <div class="tabel-kcv box">3</div>
-                    <div class="tabel-lp1 box">4</div>
-                    <div class="tabel-ajk box">5</div>
-                    <div class="tabel-igs box">6</div>
-                    <div class="tabel-lp2 box">7</div>
-                    <div class="tabel-alpro box">8</div>
-                    <div class="tabel-mi box">9</div>
-                </div> -->
+                </div>
             </div>
 
             <div class="row">
@@ -185,7 +176,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -198,7 +189,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -247,7 +238,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak"  class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -260,7 +251,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -308,7 +299,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -321,7 +312,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -369,7 +360,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -382,7 +373,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -429,7 +420,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -442,7 +433,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -490,7 +481,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -503,7 +494,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -551,7 +542,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -564,7 +555,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -612,7 +603,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -625,7 +616,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -673,7 +664,7 @@
                                             <td>Praktikum Jarkom</td>
                                             <td>Praktikum</td>
                                             <td>Praktikum Jarkom Modul 4</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
 
                                         </tr>
                                         <tr>
@@ -686,7 +677,7 @@
                                             <td>WP Panitia</td>
                                             <td>Acara Himpunan</td>
                                             <td>WP Panitia Danus</td>
-                                            <td><button type="submit" class="btn btn-xs btn-success">Terima</button><br><button type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
+                                            <td><button type="submit" id="terima" class="btn btn-xs btn-success">Terima</button><br><button id="tolak" type="submit" class="btn btn-xs btn-danger">Tolak</button></td>
                                         </tr>
                                         
                                     </tbody>
@@ -738,6 +729,37 @@
             });
         }).change();
     });
+    $('.btn-danger').on('click', function(){
+        swal({
+  title: "Apakah Anda Yakin?",
+  text: "Anda akan menolak permohonan reservasi",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Ya, tolak",
+  closeOnConfirm: false
+},
+function(){
+  swal("Berhasil!", "Anda berhasil menolak permohonan reservasi.", "success");
+});
+    });
+    $('.btn-success').on('click', function(){
+        swal({
+  title: "Apakah Anda Yakin?",
+  text: "Anda akan menerima permohonan reservasi",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Ya, terima",
+  closeOnConfirm: false
+},
+function(){
+  swal("Berhasil!", "Anda berhasil menerima permohonan reservasi.", "success");
+});
+    });
+
+
+
     </script>
 
 </body>

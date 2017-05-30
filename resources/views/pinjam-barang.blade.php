@@ -12,8 +12,8 @@
     <title>Reservasi Laboratorium Departemen Informatika ITS</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('SI-ADMIN/vendor/bootstrap/css/bootstrap.min.css')}}"  rel="stylesheet">
-
+     <link href="{{asset('SI-ADMIN/vendor/bootstrap/css/bootstrap.min.css')}}"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert.css')}}">
     <!-- MetisMenu CSS -->
     <link href="{{asset('SI-ADMIN/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
 
@@ -26,9 +26,23 @@
     <!-- Custom Fonts -->
     <link href="{{asset('SI-ADMIN/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" type="text/css" href="{{asset('css/sweetalert.css')}}">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="{{asset('js/sweetalert.min.js')}}"></script>
+
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -711,7 +725,38 @@
             });
         }).change();
     });
+
+     $('.btn-danger').on('click', function(){
+        swal({
+  title: "Apakah Anda Yakin?",
+  text: "Anda akan menolak permohonan peminjaman",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Ya, tolak",
+  closeOnConfirm: false
+},
+function(){
+  swal("Berhasil!", "Anda berhasil menolak permohonan peminjaman.", "success");
+});
+    });
+    $('.btn-success').on('click', function(){
+        swal({
+  title: "Apakah Anda Yakin?",
+  text: "Anda akan menerima permohonan peminjaman",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Ya, terima",
+  closeOnConfirm: false
+},
+function(){
+  swal("Berhasil!", "Anda berhasil menerima permohonan reservasi.", "success");
+});
+    });
+
     </script>
+
 
 </body>
 
