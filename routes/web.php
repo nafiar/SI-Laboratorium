@@ -23,6 +23,7 @@ Route::get('/fasilitas' , 'FrontendUserController@fasilitas');
 Route::get('/barang-hilang' , 'FrontendAdminController@barangHilang'); 
 Route::get('/pinjam-barang' , 'FrontendAdminController@pinjamBarang'); 
 Route::get('/register' , 'FrontendAdminController@register'); 
+Route::get('/cetaklaporan', 'FrontendAdminController@printLaporan');
 
 Route::get('/coba', function () {
     return view('coba');

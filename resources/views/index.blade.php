@@ -125,32 +125,19 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <!-- <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="form-group">
-                    
-                        <select class="form-control">
-                            <option>Pilih Laboratorium</option>
-                            <option value="tabel-rpl">RPL</option>
-                            <option value="tabel-ncc">NCC</option>
-                            <option value="tabel-kcv">KCV</option>
-                            <option value="tabel-lp1">LP</option>
-                            <option value="tabel-ajk">AJK</option>
-                            <option value="tabel-igs">IGS</option>
-                            <option value="tabel-lp2">LP-2</option>
-                            <option value="tabel-alpro">ALPRO</option>
-                            <option value="tabel-mi">MI</option>
-                        </select>
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Cetak Laporan Peminjaman Bulan ini
+                        </div>
+                        <div class="panel-body">
+                            Untuk mendapatkan laporan peminjaman lab pada bulan ini silahkan klik tombol di bawah
+                            <div class="center" style="text-align: center; margin-top: 10px;">
+                                <a class="btn btn-primary" href="/cetaklaporan">Download Laporan</a>
+                            </div> 
+                        </div>
                     </div>
-                    <div class="tabel-rpl box">1</div>
-                    <div class="tabel-ncc box">2</div>
-                    <div class="tabel-kcv box">3</div>
-                    <div class="tabel-lp1 box">4</div>
-                    <div class="tabel-ajk box">5</div>
-                    <div class="tabel-igs box">6</div>
-                    <div class="tabel-lp2 box">7</div>
-                    <div class="tabel-alpro box">8</div>
-                    <div class="tabel-mi box">9</div>
-                </div> -->
+                </div>
             </div>
 
             <div class="row">
