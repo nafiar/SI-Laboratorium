@@ -10,10 +10,6 @@ class FrontendAdminController extends Controller
       return view('loginadmin'); 
     } 
  
-    public function index(){ 
-      return view('index'); 
-    } 
- 
     public function barangHilang(){ 
       return view('barang-hilang'); 
     } 
