@@ -21,4 +21,9 @@ class FrontendAdminController extends Controller
     public function register(){ 
         return view('register'); 
     } 
+
+    public function cobaFunc(){
+        echo "coba";
+        return;
+    }
 }
