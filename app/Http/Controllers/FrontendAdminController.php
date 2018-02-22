@@ -24,7 +24,6 @@ class FrontendAdminController extends Controller
 
     public function cobaFunc(){
         echo "coba";
-        echo "tambah coba";
         return;
     }
 }
